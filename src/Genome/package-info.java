@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author kristinhuberofficial
- *
- */
-package Genome;

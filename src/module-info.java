@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author kristinhuberofficial
- *
- */
-module HuberGenomeProject {
-}

@@ -1,3 +1,1 @@
 # HuberGenomeProject
-
-## Smaller heading

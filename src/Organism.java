@@ -1,3 +1,4 @@
+import java.util.Random; 
 
 public class Organism {
 	//let's get a private variable (this is called data hiding - the private variables are only accessible from the outside
@@ -5,16 +6,32 @@ public class Organism {
 	
 	private String[] genes = new String[36];
 	
+	//this can hold the characters we want in the object's DNA
+    final String alphabet = "0123456789ABCDEFGHIJKLMNOPQRSTUVWYZabcdefghijklmnopqestuvwxyz";
+    final int N = alphabet.length();
+
+	
 	//default constructor
 	public Organism () 
 	{
 		//loop and set the inside of the private String genes
 		for(int i=0; i<genes.length;i++)
 		{
-			genes[i]="a";
+			genes[i]=getGeneValue();
 		}
 	}
 	
+	private String getGeneValue() {
+		
+		//48-122 on the ascii table is 0-9, some special chars, and then lower and upper case Alphabet. 
+		//http://www.asciitable.com/
+		Random rand = new Random(); 
+		  
+        // Generate random integers in range 0 to 999 
+       return Character.toString((char) alphabet.charAt(rand.nextInt(N))); 
+
+	}
+
 	public String[] getgenes()
 	{
 		return genes;

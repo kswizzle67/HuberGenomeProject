@@ -29,7 +29,7 @@ public class Organism {
 		  
         // Generate random integers in range 0 to 999 
        return Character.toString((char) alphabet.charAt(rand.nextInt(N))); 
-
+//demo for Aidan
 	}
 
 	public String[] getgenes()

@@ -32,10 +32,12 @@ public class Genome {
 		{
 			ecosystem.add(new Organism());	
 		}
-		
+		int i =0;
 		for(Organism e:ecosystem)
-		{
-			System.out.println(e.getgenesasString());
+		{  
+			
+			System.out.println(i + " " + e.getgenesasString());
+			i++;
 		}
 		
 	}
